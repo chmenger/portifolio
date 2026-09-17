@@ -96,32 +96,91 @@ header nav ul {
     flex-wrap: wrap;
 
     padding: 120px 50px 50px;
+    border-bottom: 8px solid rgb(68, 204, 209);
 
 }
 
 .box {
     
-    background-color: rgba(67, 241, 247, 0.932);
+    background-color: rgba(2, 226, 255, 0.932);
     box-shadow: 20px 40px 30px rgba(0, 0, 0, 0.8);
-    width: 300px;
-    height: 450px;
+    width: 150px;
+    height: 300px;
+    margin-bottom: 110px;
 
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s ease; 
 } 
 
+.box:hover {
+    width: 200px;
+    height: 350px;
+    background-color: rgb(46, 255, 255);
+}
 .box2 {
     
-    background-color: rgba(67, 241, 247, 0.932);
+    background-color: rgba(2, 226, 255, 0.932);
     box-shadow: 5px 45px 30px rgba(0, 0, 0, 0.8);
-    width: 300px;
-    height: 450px;
+    width: 150px;
+    height: 300px;
+    margin-bottom: 110px;
+
     border-radius: 20px;
 } 
+
+.box2:hover {
+    width: 200px;
+    height: 350px;
+    background-color: rgb(46, 255, 255);
+}
+
+.ver-mais {
+    display: flex;
+    background-color: rgb(19, 0, 189);
+    color: rgb(231, 231, 231);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    margin-top: auto;
+    height: 30px;
+    width: 100%;
+}
 
 footer {
     background-color: rgb(6, 2, 32);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 140px;
+    height: 240px; 
+}
+
+
+
+
+
+
+/* O :root é um lugar global onde guardamos variáveis */
+:root {
+    --imagem-perfil: url('https://link-da-imagem.com');
+    --imagem-profissao: url('imagens/fundo-profissao.png');
+}
+
+#perfil {
+    /* Em vez de colar o link gigante aqui, você puxa a variável pelo nome */
+    background-image: var(--imagem-perfil); 
+    background-size: cover;
+    background-position: center;
+}
+
+#profissao {
+    background-image: var(--imagem-profissao);
+    background-size: cover;
 }
