@@ -1,5 +1,6 @@
 const minhasImagens = {
-    perfil: "https://link-da-imagem-de-perfil.com",
-    banner: "https://link-do-banner.com",
+    perfil: "imagens/perfil-new.jpg",
     boxDescricao: "imagens/foto-local.jpg"
 };
+
+document.querySelector("#perfil-new").src = minhasImagens.perfil;
